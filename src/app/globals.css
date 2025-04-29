@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #d9d9d9;
+}
+
+header {
+  margin: 16px 3.2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headbtns {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  width: 29%;
+}
+
+.headbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24;
+  border-radius: 38;
+  width: 210px;
+} 
+
+#log_in {
+  
+  background-color: #d9d9d9;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 3.2%;
+}
+
+#mainpic {
+  width: 50%;
+  height: 794px;
+  background-color: #d9d9d9;
+  border-radius: 50;
+}
+
+#mainleftpart {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainleftparts {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mainlefttoppart h1 {
+  font-size: 96;
+}
+
+#mainlefttoppart p {
+  align-self: flex-start;
+  font-size: 64;
+}
+
+#mainleftpack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#mainleftpack div {
+  display: flex;
+  gap: 16px;
+}
+
+#maindiv {
+  justify-content: center;
+  align-items: center;
+}
+
+#mainleftpack input {
+  height: 72px;
+  flex: 1;
+  justify-content: space-between;
+  border: none;
+  background-color: #d9d9d9;
+  border-radius: 17;
+  text-align: center;
+  outline: none;
+  color: black;
+  font-size: 24;
+  font-family: 'Unbounded', sans-serif;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 24;
+  font-family: 'Unbounded', sans-serif;
+}
+
+#mainsqbtn {
+  width: 72px;
+  height: 72px;
+  border: none;
+  background-color: #d9d9d9;
+  border-radius: 17;
+}
+
+#mainbtndiv {
+  justify-content: flex-end;
+}
+
+#mainlowbtn {
+  height: 81px;
+  width: 325px;
+  background-color: #afafaf;
+  color: #fff;
+  border: none;
+  align-self: flex-end;
+  border-radius: 17;
+  font-size: 24;
+  font-family: 'Unbounded', sans-serif;
+}
+
+#mainlowbtn:hover {
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  top: 245px;
+  left: 0;
+  width: 240px;
+  height: 750px;
+  background-color: #d9d9d9;
+  border-radius: 0 35 35 0;
+}
+
+#trainercardsflex {
+  margin: 148px 105px 50px 295px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.trainercard {
+  width: 320px;
+  height: 420px;
+  background-color: #d9d9d9;
+  border-radius: 36;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trainerimg {
+  background-color: #fff;
+  border-radius: 31;
+  margin: 8px 8px 0;
+  width: 304px;
+  height: 241px;
+}
+
+.trainercondition {
+  display: flex;
+  margin: 2px 8px 0;
+}
+
+.cardcircle {
+  background-color: #d7adad;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.trainerstyles, .traineraddres, .trainergroup{
+  font-size: 16;
+  margin: 0 8px;
+}
+
+.trainername {
+  font-size: 24;
+  margin: 0 8px;
+}
+
+.trainerprice {
+  font-size: 20;
+  margin: 0 8px;
+}
+
+.trainercornerbtn {
+  background-color: #fff;
+  height: 29px;
+  width: 29px;
+  border-radius: 100%;
+  align-self: flex-end;
+  margin: 0 13px 13px;
+}
