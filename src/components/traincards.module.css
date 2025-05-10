@@ -1,0 +1,54 @@
+:local(.trainercard) {
+    width: 320px;
+    height: 420px;
+    background-color: #d9d9d9;
+    border-radius: 36;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  :local(.trainerimg) {
+    background-color: #fff;
+    border-radius: 31;
+    margin: 8px 8px 0;
+    width: 304px;
+    height: 241px;
+  }
+  
+  :local(.trainercondition) {
+    display: flex;
+    margin: 2px 8px 0;
+  }
+  
+  :local(.cardcircle) {
+    background-color: #d7adad;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+  }
+  
+  :local(.trainerstyles), :local(.traineraddres), :local(.trainergroup){
+    font-size: 16;
+    margin: 0 8px;
+  }
+  
+  :local(.trainername) {
+    font-size: 24;
+    margin: 0 8px;
+  }
+  
+  :local(.trainerprice) {
+    font-size: 20;
+    margin: 0 8px;
+  }
+  
+  :local(.trainercornerbtn) {
+    background-color: #fff;
+    height: 29px;
+    width: 29px;
+    border-radius: 100%;
+    align-self: flex-end;
+    margin: 0 13px 13px;
+  }

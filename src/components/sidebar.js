@@ -1,6 +1,8 @@
+import styles from './leftsidebar.module.css';
+
 const Sidebar = () => {
     return (
-        <aside>
+        <aside className={styles.leftside}>
             
         </aside>
     )

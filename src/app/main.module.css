@@ -1,0 +1,99 @@
+:local(main) {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 3.2%;
+  }
+  
+  :local(#mainpic) {
+    width: 50%;
+    height: 794px;
+    background-color: #d9d9d9;
+    border-radius: 50;
+  }
+  
+  :local(#mainleftpart) {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  :local(.mainleftparts) {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  :local(#mainlefttoppart) h1 {
+    font-size: 96;
+  }
+  
+  :local(#mainlefttoppart) p {
+    align-self: flex-start;
+    font-size: 64;
+  }
+  
+  :local(#mainleftpack) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  :local(#mainleftpack) div {
+    display: flex;
+    gap: 16px;
+  }
+  
+  :local(#maindiv) {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  :local(#mainleftpack) input {
+    height: 72px;
+    flex: 1;
+    justify-content: space-between;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 17;
+    text-align: center;
+    outline: none;
+    color: black;
+    font-size: 24;
+    font-family: 'Unbounded', sans-serif;
+  }
+  
+  :local(input)::placeholder {
+    color: #fff;
+    font-size: 24;
+    font-family: 'Unbounded', sans-serif;
+  }
+  
+  :local(#mainsqbtn) {
+    width: 72px;
+    height: 72px;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 17;
+  }
+  
+  :local(#mainbtndiv) {
+    justify-content: flex-end;
+  }
+  
+  :local(#mainlowbtn) {
+    height: 81px;
+    width: 325px;
+    background-color: #afafaf;
+    color: #fff;
+    border: none;
+    align-self: flex-end;
+    border-radius: 17;
+    font-size: 24;
+    font-family: 'Unbounded', sans-serif;
+  }
+  
+  :local(#mainlowbtn):hover {
+    cursor: pointer;
+  }

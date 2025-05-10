@@ -1,28 +1,29 @@
 import Link from "next/link";
+import styles from './main.module.css';
 
 export default function Home() {
   return (
     <main>
-      <div id="mainleftpart">
-        <div className="mainleftparts" id="mainlefttoppart">
+      <div id={styles.mainleftpart}>
+        <div className={styles.mainleftparts} id={styles.mainlefttoppart}>
           <h1>заголовок</h1>
           <p>текст</p>
         </div>
-        <div className="mainleftparts">
-          <div id="mainleftpack">
-            <div id="maindiv">
+        <div className={styles.mainleftparts}>
+          <div id={styles.mainleftpack}>
+            <div id={styles.maindiv}>
               <input type="text" placeholder="поиск"/>
-              <button id="mainsqbtn"></button>
+              <button id={styles.mainsqbtn}></button>
             </div>
-            <div id="mainbtndiv">
+            <div id={styles.mainbtndiv}>
               <Link href="/trainers">
-                <button id="mainlowbtn">найти</button>
+                <button id={styles.mainlowbtn}>найти</button>
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <div id="mainpic"></div>
+      <div id={styles.mainpic}></div>
     </main>
   );
 }
