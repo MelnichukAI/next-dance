@@ -1,29 +1,38 @@
-import Link from "next/link";
+'use client'; // обязательно — чтобы работал useRouter
+
+import { useRouter } from 'next/navigation';
 import styles from './main.module.css';
 
 export default function Home() {
+  const router = useRouter(); // подключаем роутер
+
+  const handleFindClick = () => {
+    router.push('/trainers'); // переход по нажатию
+  };
+
   return (
     <main>
-      <div id={styles.mainleftpart}>
-        <div className={styles.mainleftparts} id={styles.mainlefttoppart}>
-          <h1>заголовок</h1>
-          <p>текст</p>
+      <div className={styles.mainleftpart}>
+        <div className={styles.mainlefttoppart}>
+          <h1>Начни танцевать с тем, кто вдохновляет</h1>
+          <p>
+            <i><b>Danzly</b></i> — платформа, которая соединяет танцоров и тренеров <br />
+            Здесь легко найти свою группу, стиль и наставника <br />
+            А тренеры могут делиться опытом, показывать хореографии <br />
+            и находить учеников по интересам и уровню
+          </p>
         </div>
-        <div className={styles.mainleftparts}>
-          <div id={styles.mainleftpack}>
-            <div id={styles.maindiv}>
-              <input type="text" placeholder="поиск"/>
-              <button id={styles.mainsqbtn}></button>
-            </div>
-            <div id={styles.mainbtndiv}>
-              <Link href="/trainers">
-                <button id={styles.mainlowbtn}>найти</button>
-              </Link>
-            </div>
+        <div className={styles.mainleftbottompart}>
+          <div className={styles.search}>
+            <input type="text" placeholder="поиск" />
+            <button></button>
           </div>
+          <button className={styles.searchbtn} onClick={handleFindClick}>
+            найти
+          </button>
         </div>
       </div>
-      <div id={styles.mainpic}></div>
+      <img src="/banner.png" alt="Banner" className={styles.mainpic} />
     </main>
   );
 }
