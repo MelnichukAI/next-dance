@@ -48,3 +48,28 @@
 .rate h4 {
   font-size: 15;
 }
+.cardmain {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  background-color: aquamarine;
+}
+
+.trainertags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  border: 1px solid #E950A0;
+  height: 23px;
+  border-radius: 11;
+  padding: 2px 8px 0px;
+}
+
+.addres {
+  background-color: blueviolet;
+  height: 19px;
+  display: flex;
+}
