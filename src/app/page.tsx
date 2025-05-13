@@ -24,8 +24,10 @@ export default function Home() {
         </div>
         <div className={styles.mainleftbottompart}>
           <div className={styles.search}>
-            <input type="text" placeholder="поиск" />
-            <button></button>
+            <input type="text" placeholder="Стиль, тренер или уровень" />
+            <button>
+              <img src="/settings.svg" />
+            </button>
           </div>
           <button className={styles.searchbtn} onClick={handleFindClick}>
             найти
