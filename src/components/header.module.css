@@ -76,6 +76,10 @@
   cursor: pointer;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 /*.actionBtn:hover {
   background-color: #005fc1;
 }*/
